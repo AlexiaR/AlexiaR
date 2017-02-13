@@ -1,0 +1,19 @@
+<h2>******** Now your result ********</h2>
+
+<p>Your word:</p>
+<h4><%= @guess %></h4>
+<h4><%= @result %></h4>
+
+<p>Time taken to answer:</p>
+<h4><%= @result[:time] %></h4>
+
+<p>Translation:</p>
+<h4><%= @result[:translation] %></h4>
+
+<p>Your score:</p>
+<h4><%= @result[:score] %></h4>
+
+<p>Message:</p>
+<h4><%= @result[:message] %></h4>
+
+<%= link_to "Let's do it again!", game_path %>
